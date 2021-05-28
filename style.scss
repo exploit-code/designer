@@ -29,8 +29,12 @@ body {
             line-height: 22px;
             font-weight: 700;
             color: $grey-color;
+            text-decoration: none;
 
             &--active {
+                color: $black-color;
+            }
+            &:hover{
                 color: $black-color;
             }
         }
@@ -76,6 +80,10 @@ body {
             max-height: 387px;
             width: 100%;
             object-fit: cover;
+        }
+
+        &__item--hidden {
+            display: none;
         }
     }
 }
@@ -202,6 +210,7 @@ body {
         display: inline-block;
         text-decoration: none;
         transition: 0.3s;
+
         &:hover {
             box-shadow: 0 0 10px $grey-color;
             transition: 0.3s;
@@ -209,22 +218,140 @@ body {
     }
 
     &__social-networks-box {
-        padding: 85px 0px 45px 0px;
+        padding: 45px 0px 45px 0px;
         max-width: 345px;
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
     }
-    &-icon{
+
+    &-icon {
         transition: 0.3s;
     }
-    &-icon:hover{
+
+    &-icon:hover {
         transform: scale(1.1);
         transition: 0.3s;
     }
+
     &-description {
         font-size: 14px;
         line-height: 17px;
         color: $grey-color;
+    }
+}
+
+//media for 1024
+@media (max-width: 1024px) {
+    .container {
+        max-width: 740px;
+    }
+}
+
+@media (max-width: 760px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .header {
+        &-nav-list {
+            display: none;
+        }
+
+        &-about-info {
+            padding: 20px 0px 20px 0px;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &__item--lang {
+                display: none;
+            }
+
+            &__item--name {
+                font-size: 42px;
+                line-height: 40px;
+            }
+            &__item--info-about-me{
+                padding-top: 10px;
+            }
+        }
+
+        &-main-photo-box {
+            justify-content: center;
+
+            &__item {
+                display: none;
+            }
+
+            &__item--hidden {
+                display: block;
+                width: 100%;
+                max-width: 317px;
+                object-fit: cover;
+            }
+        }
+
+    }
+
+    .about-me{
+        padding: 80px 0px;
+        margin-top: 80px;
+    }
+
+    .skils {
+        padding: 80px 0px 80px 0px;
+
+        &-app {
+            flex-direction: column;
+            padding: 0px;
+
+            &__item {
+                margin-bottom: 50px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        &-name-app{
+            padding: 25px 0px 25px 0px;
+        }
+
+        &__sub-heading {
+            padding: 50px 0px;
+        }
+    }
+
+    .portfolio {
+        padding-top: 80px;
+
+        &__heading {
+            padding-bottom: 80px;
+        }
+
+        &-description {
+            margin-top: 30px;
+        }
+    }
+
+    .contacts {
+        padding: 80px 0px;
+
+        &__social-networks-box {
+            max-width: 280px;
+        }
+
+        &__sub-heading {
+            padding: 35px 0px 45px 0px;
+        }
+        &__button{
+            width: 280px;
+        }
+    }
+}
+
+@media (max-width: 350px){
+    .container{
+        max-width: 300px;
     }
 }

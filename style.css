@@ -31,9 +31,14 @@ body {
   line-height: 22px;
   font-weight: 700;
   color: #828282;
+  text-decoration: none;
 }
 
 .header-nav-list__item--active {
+  color: #070707;
+}
+
+.header-nav-list__item:hover {
   color: #070707;
 }
 
@@ -90,6 +95,10 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.header-main-photo-box__item--hidden {
+  display: none;
 }
 
 .about-me {
@@ -237,7 +246,7 @@ body {
 }
 
 .contacts__social-networks-box {
-  padding: 85px 0px 45px 0px;
+  padding: 45px 0px 45px 0px;
   max-width: 345px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,5 +273,108 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #828282;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 740px;
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    max-width: 320px;
+  }
+  .header-nav-list {
+    display: none;
+  }
+  .header-about-info {
+    padding: 20px 0px 20px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .header-about-info__item--lang {
+    display: none;
+  }
+  .header-about-info__item--name {
+    font-size: 42px;
+    line-height: 40px;
+  }
+  .header-about-info__item--info-about-me {
+    padding-top: 10px;
+  }
+  .header-main-photo-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-main-photo-box__item {
+    display: none;
+  }
+  .header-main-photo-box__item--hidden {
+    display: block;
+    width: 100%;
+    max-width: 317px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .about-me {
+    padding: 80px 0px;
+    margin-top: 80px;
+  }
+  .skils {
+    padding: 80px 0px 80px 0px;
+  }
+  .skils-app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px;
+  }
+  .skils-app__item {
+    margin-bottom: 50px;
+  }
+  .skils-app__item:last-child {
+    margin-bottom: 0px;
+  }
+  .skils-name-app {
+    padding: 25px 0px 25px 0px;
+  }
+  .skils__sub-heading {
+    padding: 50px 0px;
+  }
+  .portfolio {
+    padding-top: 80px;
+  }
+  .portfolio__heading {
+    padding-bottom: 80px;
+  }
+  .portfolio-description {
+    margin-top: 30px;
+  }
+  .contacts {
+    padding: 80px 0px;
+  }
+  .contacts__social-networks-box {
+    max-width: 280px;
+  }
+  .contacts__sub-heading {
+    padding: 35px 0px 45px 0px;
+  }
+  .contacts__button {
+    width: 280px;
+  }
+}
+
+@media (max-width: 350px) {
+  .container {
+    max-width: 300px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
