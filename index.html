@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="header">
+    <div class="header box">
         <div class="container">
             <nav class="header-nav-list">
                 <a class="header-nav-list__item header-nav-list__item--active" href="#">Home</a>
@@ -23,7 +23,8 @@
             </nav>
             <div class="header-about-info">
                 <div class="header-about-info__item header-about-info__item--name">Denis<br>Novik</div>
-                <div class="header-about-info__item header-about-info__item--info-about-me">UX | UI designer<br>24 years old, Minsk</div>
+                <div class="header-about-info__item header-about-info__item--info-about-me">UX | UI designer<br>24 years
+                    old, Minsk</div>
                 <div class="header-about-info__item header-about-info__item--lang">
                     <div class="header-about-info-lang-ru header-about-info-disabled">RU</div>
                     <div class="header-about-info-line">|</div>
@@ -34,14 +35,15 @@
                 <div class="container">
                     <div class="header-main-photo-box">
                         <img class="header-main-photo-box__item" src="./img/main-photo.jpg" alt="my-photo">
-                        <img class="header-main-photo-box__item--hidden" src="./img/vertical-main-photo.jpg" alt="my-photo">
+                        <img class="header-main-photo-box__item--hidden" src="./img/vertical-main-photo.jpg"
+                            alt="my-photo">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="about-me">
+    <div class="about-me box">
         <div class="container">
             <div class="about-me__heading">About me</div>
             <div class="about-me__description">
@@ -53,7 +55,7 @@
         </div>
     </div>
 
-    <div class="skils">
+    <div class="skils box">
         <div class="container">
             <div class="skils__heading">Skills</div>
             <div class="skils__sub-heading">I work in such programs as</div>
@@ -114,13 +116,13 @@
                         <img class="skils-level-star" src="./img/Star-gray.svg" alt="">
                     </div>
                 </div>
-                
+
             </div>
 
         </div>
     </div>
 
-    <div class="portfolio">
+    <div class="portfolio box">
         <div class="container">
             <div class="portfolio__heading">Portfolio</div>
             <div class="portfolio__item">
@@ -140,7 +142,7 @@
         </div>
     </div>
 
-    <div class="contacts">
+    <div class="contacts box">
         <div class="container">
             <div class="contacts__heading">Contacts</div>
             <div class="contacts__sub-heading">Want to know more or just chat?<br>You are welcome!</div>
@@ -155,7 +157,24 @@
         </div>
     </div>
 
-    
+
+    <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script>
+        const link = document.querySelectorAll('.header-nav-list__item');
+        const box = document.querySelectorAll('.box');
+
+        for (let x = 0; x < link.length; x++) {
+            for (let y = 0; y < box.length; y++) {
+                link[x++].addEventListener('click', (evt) => {
+                    evt.preventDefault();
+                    box[y].scrollIntoView({
+                        behavior: "smooth"
+                    });
+                });
+            }
+        }
+    </script>
+
 </body>
 
 </html>
