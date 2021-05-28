@@ -104,7 +104,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 120px 0px 110px 0px;
+  padding: 110px 0px 110px 0px;
   background: #F6F6F6;
   margin-top: 100px;
 }
@@ -173,6 +173,7 @@ body {
 .portfolio {
   text-align: center;
   padding-top: 110px;
+  background: #F6F6F6;
 }
 
 .portfolio__heading {
@@ -183,7 +184,7 @@ body {
 }
 
 .portfolio__item {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .portfolio-img {
@@ -196,5 +197,51 @@ body {
   color: #070707;
   margin-top: 45px;
   display: inline-block;
+}
+
+.contacts {
+  padding: 110px 0px 110px 0px;
+  text-align: center;
+}
+
+.contacts__heading {
+  font-size: 34px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+.contacts__sub-heading {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 20px 0px 30px 0px;
+}
+
+.contacts__button {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 10px 30px 10px 30px;
+  background-color: #070707;
+  color: #FFFFFF;
+  border-radius: 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.contacts__social-networks-box {
+  padding: 85px 0px 45px 0px;
+  max-width: 345px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+.contacts-description {
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
 }
 /*# sourceMappingURL=style.css.map */

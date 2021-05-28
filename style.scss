@@ -85,7 +85,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 120px 0px 110px 0px;
+    padding: 110px 0px 110px 0px;
     background: #F6F6F6;
     margin-top: 100px;
 
@@ -150,6 +150,7 @@ body {
 .portfolio {
     text-align: center;
     padding-top: 110px;
+    background: #F6F6F6;
 
     &__heading {
         font-size: 34px;
@@ -157,10 +158,12 @@ body {
         font-weight: 700;
         padding-bottom: 50px;
     }
-    &__item{
-        margin-bottom: 100px;
+
+    &__item {
+        padding-bottom: 100px;
     }
-    &-img{
+
+    &-img {
         width: 100%;
     }
 
@@ -170,5 +173,47 @@ body {
         color: $black-color;
         margin-top: 45px;
         display: inline-block;
+    }
+}
+
+.contacts {
+    padding: 110px 0px 110px 0px;
+    text-align: center;
+
+    &__heading {
+        font-size: 34px;
+        line-height: 42px;
+        font-weight: 700;
+    }
+
+    &__sub-heading {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 20px 0px 30px 0px;
+    }
+
+    &__button {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 10px 30px 10px 30px;
+        background-color: $black-color;
+        color: #FFFFFF;
+        border-radius: 20px;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    &__social-networks-box {
+        padding: 85px 0px 45px 0px;
+        max-width: 345px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    &-description {
+        font-size: 14px;
+        line-height: 17px;
+        color: $grey-color;
     }
 }
