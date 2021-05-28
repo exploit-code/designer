@@ -201,6 +201,11 @@ body {
         border-radius: 20px;
         display: inline-block;
         text-decoration: none;
+        transition: 0.3s;
+        &:hover {
+            box-shadow: 0 0 10px $grey-color;
+            transition: 0.3s;
+        }
     }
 
     &__social-networks-box {
@@ -210,7 +215,13 @@ body {
         justify-content: space-between;
         margin: 0 auto;
     }
-
+    &-icon{
+        transition: 0.3s;
+    }
+    &-icon:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
     &-description {
         font-size: 14px;
         line-height: 17px;

@@ -225,6 +225,15 @@ body {
   border-radius: 20px;
   display: inline-block;
   text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contacts__button:hover {
+  -webkit-box-shadow: 0 0 10px #828282;
+          box-shadow: 0 0 10px #828282;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .contacts__social-networks-box {
@@ -237,6 +246,18 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
+}
+
+.contacts-icon {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contacts-icon:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .contacts-description {
