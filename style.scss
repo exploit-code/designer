@@ -34,7 +34,8 @@ body {
             &--active {
                 color: $black-color;
             }
-            &:hover{
+
+            &:hover {
                 color: $black-color;
             }
         }
@@ -45,6 +46,7 @@ body {
         justify-content: space-between;
         align-items: center;
         padding: 40px 0px 30px 0px;
+        position: relative;
 
         &__item--name {
             font-size: 47.3392px;
@@ -71,6 +73,13 @@ body {
         &-disabled {
             color: $grey-color;
         }
+
+        &-button {
+            display: none;
+            position: absolute;
+            top: 20;
+            right: 0;
+        }
     }
 
     &-main-photo-box {
@@ -82,7 +91,7 @@ body {
             object-fit: cover;
         }
 
-        &__item--hidden {
+        &__item-hidden {
             display: none;
         }
     }
@@ -271,8 +280,13 @@ body {
                 font-size: 42px;
                 line-height: 40px;
             }
-            &__item--info-about-me{
+
+            &__item--info-about-me {
                 padding-top: 10px;
+            }
+
+            &-button {
+                display: block;
             }
         }
 
@@ -283,7 +297,7 @@ body {
                 display: none;
             }
 
-            &__item--hidden {
+            &__item-hidden {
                 display: block;
                 width: 100%;
                 max-width: 317px;
@@ -293,7 +307,7 @@ body {
 
     }
 
-    .about-me{
+    .about-me {
         padding: 80px 0px;
         margin-top: 80px;
     }
@@ -313,7 +327,8 @@ body {
                 }
             }
         }
-        &-name-app{
+
+        &-name-app {
             padding: 25px 0px 25px 0px;
         }
 
@@ -344,14 +359,15 @@ body {
         &__sub-heading {
             padding: 35px 0px 45px 0px;
         }
-        &__button{
+
+        &__button {
             width: 280px;
         }
     }
 }
 
-@media (max-width: 350px){
-    .container{
+@media (max-width: 350px) {
+    .container {
         max-width: 300px;
     }
 }
