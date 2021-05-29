@@ -12,31 +12,38 @@
 </head>
 
 <body>
-    <div class="header box">
+    <div id="home-page"></div>
+
+    <div class="header">
         <div class="container">
             <nav class="header-nav-list">
-                <a class="header-nav-list__item header-nav-list__item--active" href="#">Home</a>
-                <a class="header-nav-list__item" href="#">About me</a>
-                <a class="header-nav-list__item" href="#">Skills</a>
-                <a class="header-nav-list__item" href="#">Portfolio</a>
-                <a class="header-nav-list__item" href="#">Contacts</a>
+                <a class="header-nav-list__item" href="#home-page">Home</a>
+                <a class="header-nav-list__item" href="#about-me">About me</a>
+                <a class="header-nav-list__item" href="#skils">Skills</a>
+                <a class="header-nav-list__item" href="#portfolio">Portfolio</a>
+                <a class="header-nav-list__item" href="#contacts">Contacts</a>
             </nav>
-            <div class="header-about-info">
-                <div class="header-about-info__item header-about-info__item--name">Denis<br>Novik</div>
-                <div class="header-about-info__item header-about-info__item--info-about-me">UX | UI designer<br>24 years
+        </div>
+    </div>
+
+    <div class="home-page">
+        <div class="container">
+            <div class="home-page-info">
+                <div class="home-page-info__item home-page-info__item--name">Denis<br>Novik</div>
+                <div class="home-page-info__item home-page-info__item--info-about-me">UX | UI designer<br>24 years
                     old, Minsk</div>
-                <div class="header-about-info__item header-about-info__item--lang">
-                    <div class="header-about-info-lang-ru header-about-info-disabled">RU</div>
-                    <div class="header-about-info-line">|</div>
-                    <div class="header-about-info-lang-eng">ENG</div>
+                <div class="home-page-info__item home-page-info__item--lang">
+                    <div class="home-page-info-lang-ru home-page-info-disabled">RU</div>
+                    <div class="home-page-info-line">|</div>
+                    <div class="home-page-info-lang-eng">ENG</div>
                 </div>
-                <img class="header-about-info-button" src="./img/menu-icon.svg" alt="">
+                <img class="home-page-info-button" src="./img/menu-icon.svg" alt="">
             </div>
-            <div class="header-main-photo">
+            <div class="home-page-main-photo">
                 <div class="container">
-                    <div class="header-main-photo-box">
-                        <img class="header-main-photo-box__item" src="./img/main-photo.jpg" alt="my-photo">
-                        <img class="header-main-photo-box__item-hidden" src="./img/vertical-main-photo.jpg"
+                    <div class="home-page-main-photo-box">
+                        <img class="home-page-main-photo-box__item" src="./img/main-photo.jpg" alt="my-photo">
+                        <img class="home-page-main-photo-box__item-hidden" src="./img/vertical-main-photo.jpg"
                             alt="my-photo">
                     </div>
                 </div>
@@ -44,7 +51,7 @@
         </div>
     </div>
 
-    <div class="about-me box">
+    <div class="about-me" id="about-me">
         <div class="container">
             <div class="about-me__heading">About me</div>
             <div class="about-me__description">
@@ -56,7 +63,7 @@
         </div>
     </div>
 
-    <div class="skils box">
+    <div class="skils" id="skils">
         <div class="container">
             <div class="skils__heading">Skills</div>
             <div class="skils__sub-heading">I work in such programs as</div>
@@ -123,7 +130,7 @@
         </div>
     </div>
 
-    <div class="portfolio box">
+    <div class="portfolio" id="portfolio">
         <div class="container">
             <div class="portfolio__heading">Portfolio</div>
             <div class="portfolio__item">
@@ -143,7 +150,7 @@
         </div>
     </div>
 
-    <div class="contacts box">
+    <div class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__heading">Contacts</div>
             <div class="contacts__sub-heading">Want to know more or just chat?<br>You are welcome!</div>
@@ -157,7 +164,6 @@
             <div class="contacts-description">Like me on<br>LinkedIn, Instagram, Behance, Dribble</div>
         </div>
     </div>
-
 
     <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <script src="./script.js"></script>
